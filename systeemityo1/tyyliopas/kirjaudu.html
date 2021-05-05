@@ -1,0 +1,146 @@
+<html>
+    <head>
+            <meta charset="utf-8">  
+            <title>Harjoitustyö</title>
+            <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+            <style>
+ body {
+      margin:0;
+      background-image: url("https://kohteenamaailma.fi/wp-content/uploads/2019/09/tampere240-1440x960.jpg");
+
+  
+height: 100%;
+
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+    
+
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif;
+}
+.container {
+  float: right;
+  padding: 250px;
+  margin: auto;
+  width: 70%;
+  border: 3px;
+  padding: 200px;
+  font-family: 'Cairo', sans-serif;
+  color: white;
+  z-index: 2;
+  }
+  .container2 {
+  padding: 10px;
+  margin: auto;
+  width: 60%;
+  border: 3px;
+  padding: 10px;
+  font-family: 'Cairo', sans-serif;
+  }
+input[type=text], input[type=password] {
+  width: 82%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  
+}
+
+
+button {
+  position: center;
+  background-color: crimson;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 81.9%;
+  font-size: 100%;
+  font-family: 'Cairo', sans-serif;
+}
+
+.cancel {
+  position: center;
+  background-color: crimson;
+  color: white;
+  padding: 14px 524px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Cairo', sans-serif;
+}
+
+
+
+
+
+
+
+
+</style>
+            </head>
+            <body>
+                    <body>
+
+    
+                            <ul>
+                                <li><a href="etusivu.html">Etusivu</a></li>
+                                <li><a href="asunnot.html">Asunnot</a></li>
+                                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                                <li style="float:right"><a href="kirjaudu.html">Kirjaudu Sisään</a></li>
+                                </ul>
+                                
+                    <form method="post">
+                           
+            
+                            <div class="container">
+                              <label for="käyttäjätunnus"><b>Käyttäjätunnus</b></label><br>
+                              <input type="text" placeholder="Käyttäjätunnus" name="käyttäjätunnus" required><br>
+                          
+                              <label for="salasana"><b>Salasana</b></label><br>
+                              <input type="password" placeholder="Salasana" name="salasana" required>
+                          
+                              <button onclick="window.location.href='kirjautunut.html';" type="submit">Kirjaudu</button>
+                              <div class="container2"></div>
+                              <a href="etusivu.html" class="cancel">Peruuta</a>
+                            </div>
+                            </div>
+                            </div>
+                          
+                            
+                              
+                            </div>
+                          </form>
+                        
+            </body>
+            </html>
+                

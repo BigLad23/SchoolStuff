@@ -1,0 +1,1 @@
+CREATE TABLE `uutinen`.`uutinen2` ( `Otsikko` VARCHAR NULL , `Sisalto` VARCHAR NULL , `Kirjoituspvm` DATE NULL , `Poistamispvm` DATE NULL , `Kirjoittaja` VARCHAR NULL , PRIMARY KEY (`Otsikko`)) ENGINE = InnoDB;

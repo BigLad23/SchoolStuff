@@ -1,0 +1,11 @@
+ALTER TABLE kaverit CHANGE Syntymäpäivä DATE NULL;
+
+INSERT INTO `kaverit` (`ID`, `Lempinimi`, `Etunimi`, `Sukunimi`, `Syntymäpäivä`, `Puhelinnumero`, `Email`, `Lähiosote`, `Postinumero`, `Postitoimipaikka`) VALUES ('1', 'aku', 'aku', 'ankka', '1583-12-12', '112', 'aku.ankka@yahoo.ru', 'hämeenkatu 12', '33780', 'moskova');
+
+UPDATE `kaverit` SET `ID` = '1' WHERE `kaverit`.`ID` = '';
+
+INSERT INTO `kaverit` (`ID`, `Lempinimi`, `Etunimi`, `Sukunimi`, `Syntymäpäivä`, `Puhelinnumero`, `Email`, `Lähiosote`, `Postinumero`, `Postitoimipaikka`) VALUES ('2', 'Thanos', 'purple', 'lad', '3000-01-30', '0405854834', 'bigladthanos@gmail.rom', 'hämeenkatu 74', '11111', 'berlin');
+
+INSERT INTO `kaverit` (`ID`, `Lempinimi`, `Etunimi`, `Sukunimi`, `Syntymäpäivä`, `Puhelinnumero`, `Email`, `Lähiosote`, `Postinumero`, `Postitoimipaikka`) VALUES ('3', 'Yobama', 'Barack', 'yoda', '9999-4-12', '0405821323', 'yobama@hotmail.as', 'wall street', '34323', 'mars')
+
+DELETE FROM `kaverit` WHERE `kaverit`.`ID` = \'1\

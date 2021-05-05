@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    background-image: url("joulu.png");
+    background-size: 88%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.container {
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+#days {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.snow {
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow:  0 0 50px whitesmoke;
+}
+.animate {
+    animation: falling 8.5s infinite ease-in;
+}
+@keyframes falling {
+    0% {top: 0; opacity: 1;}
+    100% {top: 1000px; opacity: 0;}
+}
