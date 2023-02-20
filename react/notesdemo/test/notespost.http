@@ -1,0 +1,8 @@
+POST http://localhost:3001/notes HTTP/1.1
+content-type: application/json
+
+  {
+    "content": "CSS is easy",
+    "date": "2020-01-10T17:30:31.098Z",
+    "important": true
+  }
