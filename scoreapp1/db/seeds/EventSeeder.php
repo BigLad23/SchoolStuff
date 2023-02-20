@@ -19,14 +19,14 @@ class EventSeeder extends AbstractSeed
             [
                 'event_id'    => 1,
                 'name' => 'Jääkiekon maailmanmestaruus' ,
-                'date' => '01-06-2021',
-                'type' => 'sports'
+                'date' => '2021-06-01',
+                'type' => 1
             ],
             [
                 'event_id'    => 2,
                 'name' => 'Euroviisut 2021',
-                'date' => '18-05-2021',
-                'type' => 'singing'
+                'date' => '2021-05-15',
+                'type' => 2
             ]
         ];
 

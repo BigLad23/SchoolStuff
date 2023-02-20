@@ -30,7 +30,7 @@ class LContestantSeeder extends AbstractSeed
             [
                 'lcontestant_id'    => 2,
                 'name' => 'Suomi',
-                'event_id' => 2,
+                'event_id' => 1,
             ]
         ];
 

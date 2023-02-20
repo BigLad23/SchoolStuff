@@ -1,0 +1,115 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Site grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 20% 80%);
+    grid-template-rows: repeat(2, minmax(700px, 1fr));
+    gap: 0px 0px;
+    grid-template-areas:
+      "banner banner"
+      "sidebar content";
+    min-height: 100vh;
+}
+
+.banner { 
+    grid-area: banner;
+    background: url("../img/scorecardapp_cropped.webp") no-repeat left center;
+}
+  
+.sidebar { 
+    grid-area: sidebar;
+    background-color: #B3D7F3;
+    text-align: center;
+}
+  
+.content {
+    grid-area: content;
+    padding: 50px;
+}
+
+/* Profile pic */
+
+.profile-pic {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#profile-image {
+    display: block;
+    height: auto;
+    border-color: #00b0f0;
+    border-style: solid;
+    box-shadow: -6px 8px 19px -9px rgba(0,0,0,0.54);
+    margin: auto;
+}
+
+#username_adminview {
+    font-family: "Roboto Condensed", "sans-serif";
+    font-size: 2.2vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#joineddate_adminview {
+    font-family: "Roboto Condensed", "sans-serif";
+    font-size: 1.9vh;
+    font-weight: bold;
+    color: #00b0f0;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.sidebar a {
+    font-family: "Anton", "sans-serif";
+    font-size: 3.5vh;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.sidebar a:hover {
+    color: #00b0f0;
+}
+
+/* Mobile devices */
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 30% auto auto);
+        grid-template-areas:
+        "banner"
+        "sidebar"
+        "content";
+    }
+
+    .banner {
+        background: url("../img/scorecardapp_mobile.webp") no-repeat center;
+        background-size: cover;
+    }
+
+    .sidebar {
+        padding-bottom: 50px;
+    }
+
+    .sidebar a {
+        font-size: 4.5vh;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    #username_adminview, #joineddate_adminview {
+        font-size: 2.5vh;
+    }
+}

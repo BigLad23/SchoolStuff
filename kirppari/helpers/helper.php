@@ -1,6 +1,5 @@
 <?php
 
-
 function sanit($word)
 {
     $word = trim($word); //poistaa tyhjät välilyönnit

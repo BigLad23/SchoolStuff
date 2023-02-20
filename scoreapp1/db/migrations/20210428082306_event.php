@@ -21,7 +21,7 @@ final class Event extends AbstractMigration
         $table = $this->table('event', ['id' => 'event_id']);
         $table->addColumn('name', 'string')
             ->addColumn('date', 'datetime')
-            ->addColumn('type','string')
+            ->addColumn('type','integer')
             ->create();
     }
 }

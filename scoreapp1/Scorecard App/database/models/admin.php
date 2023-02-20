@@ -1,4 +1,6 @@
 <?php
+/* This function handles the login of admin users */
+
 function loginAdmin ($username, $password)
 {
     global $pdo;
@@ -20,6 +22,8 @@ function loginAdmin ($username, $password)
         else return FALSE;
     } else return FALSE;
 }
+
+/* This function fetches admins by username */
 
 function getAdminByUsername ($username)
 {

@@ -22,7 +22,7 @@ class LBetsSeeder extends AbstractSeed
     }
     public function run()
     {
-       $data = [
+        $data = [
             [
                 'lbets_id'    => 1,
                 'guessedlranking' => 1,
@@ -34,11 +34,29 @@ class LBetsSeeder extends AbstractSeed
                 'guessedlranking' => 2,
                 'lmatch_id' => 2,
                 'user_id' => 2,
+            ],
+            [
+                'lbets_id'    => 3,
+                'guessedlranking' => 1,
+                'lmatch_id' => 2,
+                'user_id' => 3,
+            ],
+            [
+                'lbets_id'    => 4,
+                'guessedlranking' => 1,
+                'lmatch_id' => 2,
+                'user_id' => 1,
+            ],
+            [
+                'lbets_id'    => 5,
+                'guessedlranking' => 1,
+                'lmatch_id' => 2,
+                'user_id' => 3,
             ]
-        ];
+            ];
 
         $posts = $this->table('leaguebets');
         $posts->insert($data)
-            ->saveData();  
-    } 
+            ->saveData();
+    }
 }

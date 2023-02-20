@@ -1,33 +1,25 @@
 <?php
-if(isset($message)) echo "<hr>". $message."<hr>";
+if(isset($message)) echo "<hr>". $message ."<hr>";
 require "./views/partials/head.php";
-require "./views/partials/end.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-  <title>Sing in</title>
-  <meta charset="utf-8">
-</head>
-<body>
+<div class="main">
+  <h1>Sign in</h1>
 
+  <div class= "container-fluid" id= "formwrapper">
+    <form method ="post" action="/index.php?action=login">
+        <label for="username">Username:</label> <br>
+        <input type="text" id="username" name="username" required> <br>
 
-<div class="container">
-  <h2>Sign in</h2>
-  <form method ="post">
-    <div class="form-group">
-      <label for="username">Username</label>
-      <input type="text" class="form-control" id="username" name="username">
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" class="form-control" id="password" name="password">
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Log in</button>
-  </form>
+        <label for="password">Password:</label> <br>
+        <input type="password" id="password" name="password" required>
+      
+        <div class= "container-fluid" id= "submitwrapper">
+          <input type="submit" id= "submit" value= "LOGIN">
+        </div>
+    </form>
 </div>
 
-</body>
-</html>
+<?php
+require "./views/partials/end.php";
+?>

@@ -24,13 +24,13 @@ class LMatchSeeder extends AbstractSeed
        $data = [
             [
                 'lmatch_id'    => 1,
-                'results' => 'Venäjä - Suomi (0-1)' ,
+                'results' => 2,
                 'homecontestantid' => 1,
                 'awaycontestantid' => 2,
             ],
             [
                 'lmatch_id'    => 2,
-                'results' => 'Suomi - Venäjä (2-1)',
+                'results' => 1,
                 'homecontestantid' => 2,
                 'awaycontestantid' => 1,
             ]

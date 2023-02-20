@@ -23,15 +23,17 @@ class LRoundSeeder extends AbstractSeed
     {
        $data = [
             [
+                'name' => 'Semifinaali',
                 'lround_id'    => 1,
                 'roundnum' => 1,
-                'date' => '01-06-2021',
+                'date' => '2021-06-01',
                 'lmatch_id' => 1,
             ],
             [
+                'name' => 'Finaali',
                 'lround_id'    => 2,
                 'roundnum' => 2,
-                'date' => '18-05-2021',
+                'date' => '2021-05-15',
                 'lmatch_id' => 2,
             ]
         ];

@@ -1,14 +1,17 @@
 <?php
-require "./database/connection.php"; 
+function getYourBets()
+{
+    
+}
 
 
  
 function getAllUsers()
 {
-global $db; 
+global $pdo;
  
 $sql = "SELECT * FROM users"; 
-$stm = $db->query($sql);
+$stm = $pdo->query($sql);
  
 $allusers = $stm->fetchAll(PDO::FETCH_ASSOC);
 
@@ -19,9 +22,9 @@ return $allusers;
 
 function addUser($data)
 {
-    global $db;
+    global $pdo;
     $sql = "INSERT INTO users (username, email, password) VALUES (?,?,?)";
-    $stm = $db->prepare($sql);
+    $stm = $pdo->prepare($sql);
     $ok = $stm->execute($data);
     return $ok;
 }
@@ -30,10 +33,10 @@ function addUser($data)
 
 function getUserByUsername($username)
 {
-    global $db;
+    global $pdo;
 
     $sql = "SELECT * FROM users WHERE username = ?";
-    $stm = $db->prepare($sql);
+    $stm = $pdo->prepare($sql);
 
     $stm->bindValue(1, $username);
     $stm->execute();
@@ -46,11 +49,11 @@ function getUserByUsername($username)
 
 function loginUser($username,$password)
 {
-    global $db; //connection
+    global $pdo; //connection
 
     $sql = "SELECT username, password FROM users WHERE username = ?";
 
-    $stm = $db->prepare($sql);
+    $stm = $pdo->prepare($sql);
     $stm->bindValue(1,$username);
     $stm->execute();
 
@@ -62,6 +65,4 @@ function loginUser($username,$password)
         } else return FALSE;
     } else return FALSE;
 }
-
-
 ?>

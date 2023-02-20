@@ -26,7 +26,7 @@ class RContestantsSeeder extends AbstractSeed
                 'contestant_id'    => 1,
                 'placement' => 1,
                 'name' => 'Ruotsi, Tusse',
-                'event_id' => 1,
+                'event_id' => 2,
             ],
             [
                 'contestant_id'    => 2,

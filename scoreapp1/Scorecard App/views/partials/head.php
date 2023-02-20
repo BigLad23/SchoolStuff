@@ -6,12 +6,12 @@
 
     <title>Scorecard App</title>
 
-    <!---Bootstrap CSS--->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
     <!---Scorecard App CSS--->
-    <link rel= "stylesheet" href= "../public/css/jumbotron.css">
-    <link rel= "stylesheet" href= "../public/css/index.view.css">
+    <link rel= "stylesheet" href= "/public/css/jumbotron.css">
+    <link rel= "stylesheet" href= "/public/css/head.css">
+    <link rel= "stylesheet" href= "/public/css/index.view.css">
+    <link rel= "stylesheet" href= "/public/css/loginform.css">
+    <link rel= "stylesheet" href= "/public/css/registrationform.css">
 
     <!---Fonts--->
     <style>
@@ -19,12 +19,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     </style>
 </head>
-
-    <!---Banner--->
-<div class= "jumbotron jumbotron-fluid">
-        <img class= "img-fluid" src= "../public/img/scorecardapp_cropped.webp">
-</div>
 <body>
+    <!---Grid--->
+    <div class="grid-container">
+        <div class="banner"></div>
 
-<a href = "./index.php?action=register">Sign up</a>
-<a href = "./index.php?action=login">Login</a>
+
+        <!---Content--->
+        <div class= "content">

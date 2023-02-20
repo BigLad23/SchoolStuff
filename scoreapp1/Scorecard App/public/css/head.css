@@ -1,0 +1,54 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      "banner banner"
+      "content content";
+}
+  
+.banner { 
+    grid-area: banner;
+    background: url("../img/scorecardapp_cropped.webp") no-repeat left center;
+    background-size: cover;
+}
+  
+.content {
+    grid-area: content; 
+}
+
+/* Mobile devices */
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, minmax(380px, auto));
+        grid-template-areas:
+        "banner"
+        "main";
+    }
+
+    .banner {
+
+        background: url("../img/scorecardapp_mobile.webp") no-repeat center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .grid-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, minmax(200px, auto));
+        grid-template-areas:
+        "banner"
+        "main";
+    }
+}

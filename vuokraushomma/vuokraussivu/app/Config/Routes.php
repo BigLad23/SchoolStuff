@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');  
 $routes->get('/apartments', 'Rentals::index'); 
+$routes->match(['get', 'post'], '/user/register', 'User::register');
+$routes->match(['get', 'post'], '/user/login', 'User::login');
+$routes->get('/user/logout', 'User::logout');
+
 
 
 /*

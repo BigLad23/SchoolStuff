@@ -1,6 +1,6 @@
 <?php
 
-require "./database/connection.php";
+require "../database/connection.php";
 
 
 function GetAllUsers()
@@ -9,14 +9,14 @@ function GetAllUsers()
     $sql = "SELECT * FROM user";
     $stm = $pdo->query($sql);
 
-    $usernames = $stm->fetchAll(PDO::FETCH_ASSOC);
-    return $usernames;
+    $users = $stm->fetchAll(PDO::FETCH_ASSOC);
+    return $users;
 }
 
 function AddUser($data)
 {
     global $pdo;
-    $sql = "INSERT INTO user (kayttajatunnus,salasana) VALUES(?,?)";
+    $sql = "INSERT INTO user (firstname,lastname,email,username,salasana,isadmin) VALUES(?,?,?,?,?,?)";
     
     
     $stm=$pdo->prepare($sql);
@@ -29,10 +29,10 @@ function checkLogin($username,$password)
 {
     global $pdo;
 
-    $sql = "SELECT kayttajaID,username,salasana FROM user WHERE kayttajatunnus=?";
+    $sql = "SELECT userid,username,salasana FROM user WHERE username=?";
 
     $stm= $pdo->prepare($sql);
-    $stm->bindValue(1,$username);
+    $stm->bindValue(1,$username); 
     $stm->execute();
 
     $username = $stm->fetchAll(PDO::FETCH_ASSOC);
@@ -41,18 +41,54 @@ function checkLogin($username,$password)
             return TRUE;
         } else return FALSE;
     } else return FALSE;
+
 } 
 
-function searchId($username)
+function searchUser($user)
 {
     global $pdo;
 
     $sql = "SELECT * FROM user WHERE username=?";
 
     $stm= $pdo->prepare($sql);
-    $stm->bindValue(1,$username);
+    $stm->bindValue(1,$user);
     $stm->execute();
 
-    $username = $stm->fetchAll(PDO::FETCH_ASSOC);
-    return $username;
+    $user = $stm->fetchAll(PDO::FETCH_ASSOC);
+    return $user;
+}
+
+function getUserId($userid)
+{
+    global $pdo;
+    $sql = "SELECT * FROM user WHERE userid = ?";
+    $stm=$pdo->prepare($sql);
+
+    $stm->bindvalue(1,$userid);
+    $stm->execute();
+
+    $user = $stm->fetch(PDO::FETCH_ASSOC);
+    return $user;
+}
+
+function updateUser($data)
+{
+    global $pdo;
+    $sql = "UPDATE user SET firstname = ?, lastname = ?, email = ?, username = ?, salasana = ?, isadmin = ?   WHERE userid=?";
+    $stm = $pdo->prepare($sql);
+    if($stm->execute($data)) return TRUE;
+    else return FALSE;
+    
+}
+
+
+function deleteUser($id)
+{
+    global $pdo;
+    $sql = "DELETE FROM user WHERE userid=?";
+    $stm=$pdo->prepare($sql);
+    $stm->bindValue(1,$id);
+    if($stm->execute()) return TRUE;
+    else return FALSE;
+    
 }

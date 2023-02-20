@@ -27,8 +27,15 @@ class UsersSeeder extends AbstractSeed
             [
                 'user_id'    => 2,
                 'username' => 'tester2',
-                'email' => 'tester1@email.com',
+                'email' => 'tester2@email.com',
                 'password' => password_hash('salasana2', PASSWORD_DEFAULT),
+                'isadmin' => 0,
+            ],
+            [
+                'user_id'    => 3,
+                'username' => 'tester3',
+                'email' => 'tester3@email.com',
+                'password' => password_hash('salasana3', PASSWORD_DEFAULT),
                 'isadmin' => 0,
             ]
         ];

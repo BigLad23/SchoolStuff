@@ -1,37 +1,33 @@
 <?php
 if(isset($message)) echo "<hr>". $message."<hr>";
 require "./views/partials/head.php";
-require "./views/partials/end.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-  <title>Sign up</title>
-  <meta charset="utf-8">
-</head>
+<div class= "main">
+    <h1>Sign up</h1>
 
-<body>
+    <div class= "container-fluid" id= "formwrapper">
+      <form method = "post" action="/index.php?action=register">
 
-<h1>Sign up</h1>
+        <label for = "username">Username:</label><br>
+        <input type = "text" name="username" required><br>
 
-    <div class="container">
-        <form method = "post">
+        <label for = "email">Email:</label><br>
+        <input type = "email" name="email" required><br>
 
-        <label for = "username">Username</label><br>
-        <input type = "text" class="form-control" name="username"><br>
+        <label for = "password">Password:</label><br>
+        <input type = "password" name = "password" required><br>
 
-        <label for = "email">Email</label><br>
-        <input type = "text" class="form-control" name="email"><br>
+        <label for = "password2">Confirm password:</label><br>
+        <input type = "password" name = "password2" required><br>
 
-        <label for = "password">Password</label><br>
-        <input type = "password" class="form-control" name = "password"><br>
-
-        <label for = "password2">Confirm password</label><br>
-        <input type = "password" class="form-control" name = "password2"><br>
-
-        <input type = "submit" class="btn btn-primary" style="margin: 15px" value = "Sign up"><br>
-
-        </form>
+        <div class= "container-fluid" id= "submitwrapper">
+          <input type = "submit" id="submit" value = "SIGN UP"><br>
+        </div>
+      </form>
     </div>
-</html>
+</div>
+
+<?php
+require "./views/partials/end.php";
+?>

@@ -34,6 +34,18 @@ class RBetsSeeder extends AbstractSeed
                 'guessedranking' => 2,
                 'user_id' => 2,
                 'contestant_id' => 2,
+            ],
+            [
+                'bets_id'    => 3,
+                'guessedranking' => 1,
+                'user_id' => 3,
+                'contestant_id' => 2,
+            ],
+            [
+                'bets_id'    => 4,
+                'guessedranking' => 1,
+                'user_id' => 1,
+                'contestant_id' => 2,
             ]
         ];
 
