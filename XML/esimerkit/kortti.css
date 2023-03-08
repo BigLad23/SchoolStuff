@@ -1,0 +1,22 @@
+kortti {
+    display: block;
+    background-color: #FAEBD7;
+    font-family:Georgia,Serif;
+    }
+    lahettaja {
+    display: block;
+    color: #A52A2A;
+    font-size:16pt;
+    font-weight: bold;
+    }
+    saaja {
+    display: block;
+    font-size:12pt;
+    color: #A52A2A;
+    }
+    toivotus {
+    display: block;
+    font-size:12pt;
+    color: #A52A2A;
+    font-style:italic;
+    }

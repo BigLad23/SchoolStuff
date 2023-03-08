@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type = "text/css" href="lasku.css"?>
+<!DOCTYPE kortti SYSTEM "lasku.dtd">
+<lasku>
+<tiedot>
+<saaja>Saaja: sinä</saaja>
+<lahettaja>Lähettäjä: firma oy</lahettaja>
+<osoite>Osoite:Rahakatu 12</osoite>
+<ytunnus>Ytunnus:07712321-2</ytunnus>
+</tiedot>
+<hinta>Laskun hinta: 5000€</hinta>
+<erapaiva>20.9.2021</erapaiva>
+<viivastyskorko>10%</viivastyskorko>
+<tili>FI48763298747632487</tili>
+<viitenro>86440</viitenro>
+</lasku>

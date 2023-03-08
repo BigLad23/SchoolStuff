@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lentolippu.xsl" ?>
+<lentolippu>
+<lento>
+<mista>Madrid</mista>
+<minne>Pariisi</minne>
+<lahtoaika>
+<kuu>11</kuu>
+<paiva>1</paiva>
+<tunti>13</tunti>
+<min>30</min>
+</lahtoaika>
+</lento>
+<matkustaja>
+<etunimi>Bill</etunimi>
+<sukunimi>Gates</sukunimi>
+</matkustaja>
+<hintatiedot>
+<hinta>100€</hinta>
+<vero>25%</vero>
+</hintatiedot>
+</lentolippu>

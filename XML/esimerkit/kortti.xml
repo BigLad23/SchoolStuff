@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type = "text/css" href="kortti.css"?>
+<!DOCTYPE kortti SYSTEM "kortti.dtd">
+<kortti tyyppi="sahko">
+<lahettaja>Eerikki Maula</lahettaja>
+<saaja>Joulupukki</saaja>
+<toivotus tyyli="toiveikas">Hei rakas joulupukki!
+Lähestyn sinua näin joulun lähestyessä toivomuslistan kera..</toivotus>
+</kortti>  

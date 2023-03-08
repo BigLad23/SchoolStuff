@@ -1,0 +1,21 @@
+<html>
+<head><meta charset="UTF-8"></head>
+<script language="javascript">
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+		// readyState 4: requests finished and response is ready
+		// status 200: "OK"
+		parseMenu(this);
+    }
+  };
+  xhttp.open("GET", "paneelit.xml", true);
+  xhttp.send();
+
+  function kulutus(xml) {
+      var i;
+      var xmlDoc = xml.responseXML;
+      var table ="<table border='1'><tr><th>Paneelit</th><th>Tuotanto</th><th>"
+  }
+}

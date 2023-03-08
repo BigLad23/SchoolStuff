@@ -1,0 +1,12 @@
+<!DOCTYPE lasku[
+<!ELEMENT lasku (lahettaja, saaja, osoite, ytunnus, hinta, erapaiva, viivastyskorko, tili, viitenro)>
+<!ELEMENT lahettaja (#PCDATA)>
+<!ELEMENT saaja (#PCDATA)>
+<!ELEMENT osoite (#PCDATA)>
+<!ELEMENT ytunnus (#PCDATA)>
+<!ELEMENT hinta (#PCDATA)>
+<!ELEMENT erapaiva (#PCDATA)>
+<!ELEMENT viivastyskorko (#PCDATA)>
+<!ELEMENT tili (#PCDATA)>
+<!ELEMENT viitenro (#PCDATA)> 
+]>

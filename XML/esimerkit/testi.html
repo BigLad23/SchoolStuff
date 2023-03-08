@@ -1,0 +1,39 @@
+<html>
+<head><meta charset="UTF-8"></head>
+<script language="javascript">
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+		// readyState 4: requests finished and response is ready
+		// status 200: "OK"
+		parseMenu(this);
+    }
+  };
+  xhttp.open("GET", "menu.xml", true);
+  xhttp.send();
+}
+
+function parseMenu(xml) {
+  var i;
+  var sum = 0;
+  var xmlDoc = xml.responseXML;
+  var table="<table border='1'><tr><th>Ruoka</th><th>Hinta</th></tr>";
+  var x = xmlDoc.getElementsByTagName("ruoka");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("nimi")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("hinta")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+	sum += parseFloat(x[i].getElementsByTagName("hinta")[0].childNodes[0].nodeValue);
+  }
+  table += "</table><p>Yhteensä: " + sum;
+  document.getElementById("root").innerHTML = table;
+}
+</script>
+
+<input type="button" onclick="loadDoc()" value="Hae tiedot"/>
+
+<div id="root"></div>
+</html>

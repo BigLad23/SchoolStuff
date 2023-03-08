@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+<ruoka>
+<nimi>Maa-artisokkakeitto</nimi>
+<hinta>20.50</hinta>
+</ruoka>
+<ruoka>
+<nimi>Paahdettua taimen</nimi>
+<hinta>19.90</hinta>
+</ruoka>
+<ruoka>
+<nimi>Crème brûlé</nimi>
+<hinta>12.50</hinta>
+</ruoka>
+<ruoka>
+<nimi>Tauno Palon kermasipulipihvi</nimi>
+<hinta>27.90</hinta>
+</ruoka>
+<ruoka>
+<nimi>ihan ok pihvi</nimi>
+<hinta>25</hinta>
+</ruoka>
+</menu>

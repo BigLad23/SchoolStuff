@@ -1,0 +1,25 @@
+lasku {
+    display: block;
+    color: #A52A2A;
+    font-size:16pt;
+    font-weight: bold;
+    background-color: white;
+    }
+    lahettaja {
+    display: block;
+    color: #A52A2A;
+    font-size:16pt;
+    font-weight: bold;
+    }
+    saaja {
+    display: block;
+    color: #A52A2A;
+    font-size:16pt;
+    font-weight: bold;
+    }
+    hinta {
+    display: block;
+    color: #A52A2A;
+    font-size:16pt;
+    font-weight: bold;
+    }

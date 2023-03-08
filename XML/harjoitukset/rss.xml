@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+  <title>hieno bussi</title>
+  <link></link>
+  <description>test</description>
+  <item>
+      <title>kouvola katosi kartalta</title>
+      <link></link>
+      <description>ihan ok</description>
+  </item>
+  <item>
+      <title>turku</title>
+      <link></link>
+      <description>turku</description>
+    </item>
+    <item>
+      <title>koskikeskus </title>
+      <link></link>
+      <description>sinne tulee taco bell</description>
+    </item>
+    <item>
+      <title>kfc</title>
+      <link></link>
+      <description>ihan ok</description>
+    </item>
+</channel>
+</rss> 

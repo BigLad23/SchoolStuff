@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="kurssi.xsl" ?>
+<kurssi>
+  <osallistuja tila="H">
+    <tunnus>98001</tunnus>
+    <nimi>Makkonen Matti</nimi>
+  </osallistuja>
+  <osallistuja tila="I">
+    <tunnus>98002</tunnus>
+    <nimi>Makkonen Maija</nimi>
+  </osallistuja>
+  <osallistuja tila="I">
+    <tunnus>98003</tunnus>
+    <nimi>Huttunen Heikkilo</nimi>
+  </osallistuja>
+</kurssi>

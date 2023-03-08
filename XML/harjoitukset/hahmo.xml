@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<character>
+<class>Knight</class>
+<health>100</health>
+<stamina>200</stamina>
+<mana>500</mana>
+<speed>50</speed>
+<equipment>
+<armor>
+<helmet>Leather Helmet</helmet>
+<chestplate>Chainmail chestplate</chestplate>
+<leggings>Chainmail leggings</leggings>
+<boots>Leather boots</boots>
+</armor>
+<weapons>
+<sword>Iron Sword</sword>
+<shield>Iron shield</shield>
+</weapons>
+</equipment>
+</character>

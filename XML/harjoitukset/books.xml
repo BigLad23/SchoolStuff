@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl" ?>
+<!DOCTYPE books [
+<!ELEMENT books (book)+>
+<!ELEMENT book (title , author , year , publisher , translator , original)>
+<!ATTLIST book id CDATA "0">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author id CDATA "0">
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT translator (#PCDATA)>
+<!ELEMENT original (#PCDATA)>
+]>
+
+<books>
+  <book id="1">
+    <title>Färg bortom tid och rum</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1988</year>
+    <publisher>Vallentuna : Hagaberg</publisher>
+    <translator/>
+    <original/>
+  </book>
+  <book id="2">
+    <title>Kammottu talo</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1992</year>
+    <publisher>Helsinki : Jalava</publisher>
+    <translator/>
+    <original/>
+  </book>
+  <book id="3">
+    <title>Ultharin kissat</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1995</year>
+    <publisher>Hyvinkää : Book Studio</publisher>
+    <translator/>
+    <original>The cats of Ulthar</original>
+  </book>
+  <book id="4">
+    <title>Viileää ilmaa</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>2000</year>
+    <publisher/>
+    <translator/>
+    <original/>
+  </book>
+  <book id="5">
+    <title>Rotat seinissä</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1990</year>
+    <publisher/>
+    <translator/>
+    <original/>
+  </book>
+  <book id="6">
+    <title>Unen tuolla puolen</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1992</year>
+    <publisher>Hyvinkää : Book Studio</publisher>
+    <translator/>
+    <original>Beyond the wall of sleep</original>
+  </book>
+  <book id="7">
+    <title>Öinen meri</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1995</year>
+    <publisher>Porvoo ; Helsinki ; Juva : WSOY</publisher>
+    <translator/>
+    <original/>
+  </book>
+  <book id="8">
+    <title>Kauhun kynnys</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1993</year>
+    <publisher>Porvoo ; Helsinki ; Juva : WSOY</publisher>
+    <translator>Äärelä, Ilkka</translator>
+    <original>The lurker at the treshold</original>
+  </book>
+  <book id="9">
+    <title>Varjo menneisyydestä</title>
+    <author id="1002">Lovecraft, H. P.</author>
+    <year>1993</year>
+    <publisher>Helsinki : Jalava</publisher>
+    <translator>Äärelä, Ilkka</translator>
+    <original/>
+  </book>
+  <book id="10">
+    <title>Punaisen surman naamio</title>
+    <author id="1001">Poe, Edgar Allan</author>
+    <year>1926</year>
+    <publisher>Helsinki : Kansanvalta</publisher>
+    <translator>Kaltimo, Eino</translator>
+    <original/>
+  </book>
+  <book id="11">
+    <title>Pelon ja kuoleman kertomuksia</title>
+    <author id="1001">Poe, Edgar Allan</author>
+    <year>2007</year>
+    <publisher>[Helsinki] : Gummerus</publisher>
+    <translator>Haarikko, Harri</translator>
+    <original/>
+  </book>
+  <book id="12">
+    <title>Rue Morguen murhat ja muita kertomuksia</title>
+    <author id="1001">Poe, Edgar Allan</author>
+    <year>2000</year>
+    <publisher>Helsinki : WSOY</publisher>
+    <translator>Lehtonen, Paavo</translator>
+    <original/>
+  </book>
+  <book id="13">
+    <title>Arthur Gordon Pymin selonteko</title>
+    <author id="1004">Poe, Edgar Allan</author>
+    <year>2008</year>
+    <publisher>Helsinki : Teos</publisher>
+    <translator>Kapari-Jatta, Jaana</translator>
+    <original>The narrative of Arthur Gordon Pym of Nantucket</original>
+  </book>
+</books>
