@@ -1,0 +1,15 @@
+Hei! Minun auto ei käynnisty;Day1
+Voisitko katsoa miksi se ei käynnisty?;Day1
+*Ding*, Sinulle tuli sähköposti;Day2
+Sähköposti: Hei, olisiko teillä aikaa vaihtaa tuulilasi ensi vikolla;Day2
+Hei! Voisitko asentaa tämän osan?;Day3
+*Huomaat että osa on lainvastainen*;Day3
+Olet korjaamassa auto joka tuotiin virtalukon toimintahäiriön vuoksi;Day4
+Mutta huomaat, että asikaan auton turvatyynyn kellojousi on viallinen;Day4
+Asiakas ilmoittaa, että hän haluaa autonsa takaisin;Day5
+Mutta hän ei ole maksanut laskuansa vielä;Day5
+Olet korjaamassa autoa, jossa on paljon ongelmia;Day6
+Ja huomaat ettet tule saamaan työtä valmiiksi sovitussa ajassa;Day6
+*Ding* Sinulle tuli tekstiviesti;Day7
+Hei! Huomasin että teitte virheen huollon aikana.;Day7
+Dialogi;Taso

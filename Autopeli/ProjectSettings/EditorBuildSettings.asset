@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: a12a9d2a11d8cd342b3fce0336b5845e
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 0185e52f8dd1420418e1f46127c5cb95
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day1.unity
+    guid: 72cfddcf4a27b164eb1d54d143e6d662
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day2.unity
+    guid: 877a4824dfddc1d4887a002a2175ef41
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day3.unity
+    guid: 04420d98d92130948aa613711aa58ddd
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day4.unity
+    guid: 2318d20bc511aa94786b1516b4fc0280
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day5.unity
+    guid: 652bf2c10acbfde4fb53c8e4f2112c99
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day6.unity
+    guid: 91af6fee90de9d34b928196eeb362211
+  - enabled: 1
+    path: Assets/Scenes/Levels/Day7.unity
+    guid: 82aa8938bf4a6b34bb7810a66ff23d35
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 3a6d3f79c8d530148ad45f468a413621
+  m_configObjects: {}
